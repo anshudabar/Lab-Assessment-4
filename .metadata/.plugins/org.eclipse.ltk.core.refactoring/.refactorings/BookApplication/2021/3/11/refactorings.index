@@ -1,0 +1,6 @@
+1615296882458	Rename package 'com.bookapp.controller'
+1615296896808	Rename package 'com.bookapp.sessionfactory'
+1615296907626	Rename package 'com.bookapp.service'
+1615296920306	Rename package 'com.bookapp.exceptions'
+1615296934198	Rename package 'com.bookapp.dao'
+1615296955746	Rename type 'BookStoreClient'

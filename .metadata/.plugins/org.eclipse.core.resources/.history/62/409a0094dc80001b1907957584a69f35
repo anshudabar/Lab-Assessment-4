@@ -1,0 +1,35 @@
+package com.bookapplication.service;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.bookapplication.dao.Book;
+import com.bookapplication.dao.BookDao;
+import com.bookapplication.dao.BookDaoImpl;
+import com.bookapplication.dao.Chapter;
+import com.bookapplication.dao.Publisher;
+
+public class BookStoreService {
+	
+	private BookDao bookDao;
+
+	public BookStoreService() {
+		this.bookDao = new BookDaoImpl();
+	}
+
+	public void persistObjectGraph(Book book) {
+		
+		bookDao.addBook(book);
+	}
+
+	public Book retrieveObjectGraph(String isbn) {
+
+		return bookDao.getBook(isbn);
+	}
+
+}
